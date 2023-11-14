@@ -1,0 +1,15 @@
+<!-- cardnews/templates/cardnews/card_list.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Card News Generator</title>
+</head>
+<body>
+    <h1>Card News List</h1>
+    <ul>
+        {% for card in cards %}
+            <li>{{ card.title }} - {{ card.subtitle }} - {{ card.content }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
